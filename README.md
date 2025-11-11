@@ -1,6 +1,6 @@
 # KoopMotion
 
-Code for **KoopMotion: Learning Almost Divergence Free Koopman Flow Fields for Motion Planning** approach.  KoopMotion is a learning from demonstration work that enables learning smooth, stable motion policies (vector fields) from demonstration trajectories using Koopman operator theory. Evaluations are based on the **EPFL LASA handwriting dataset**.
+Code for [**KoopMotion: Learning Almost Divergence Free Koopman Flow Fields for Motion Planning**](https://alicekl.github.io/koop-motion/).  KoopMotion is a learning from demonstration framework that enables learning smooth, stable motion policies (vector fields) from demonstration trajectories using Koopman operator theory. Evaluations are based on the [EPFL LASA handwriting dataset](https://github.com/justagist/pyLasaDataset).
 
 ---
 
@@ -9,7 +9,7 @@ Code for **KoopMotion: Learning Almost Divergence Free Koopman Flow Fields for M
 Clone this repository and install its requirements 
 ```
 git clone https://github.com/alicekl/koopmotion.git
-cd koop-motion
+cd koopmotion
 python -m pip install -r requirements.txt 
 python -m pip install -e .
 ```
