@@ -6,7 +6,7 @@ Code for [**KoopMotion: Learning Almost Divergence Free Koopman Flow Fields for 
 
 ## Installation
 
-Clone this repository and install its requirements 
+Clone this repository and install its requirements, as well as the package itself 
 ```
 git clone https://github.com/alicekl/koopmotion.git
 cd koopmotion
