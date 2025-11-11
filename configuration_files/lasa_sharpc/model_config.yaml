@@ -1,0 +1,53 @@
+# Training data parameters 
+data_args:
+  bounds_x:
+  - -40
+  - 5
+  bounds_y:
+  - -5
+  - 55
+  features_n: 2
+  system: lasa_sharpc
+  training_noise_sigma: 0.005
+  multiple_training_trajectories: true
+  num_demonstrations: 7 # for plotting ground truth, assumes demonstration are of the same length
+  resolution_training: 40 # we use every 40th sample of the LASA dataset
+# Reconstruction parameters 
+reconstruction_args:
+  estimate_type: using_identity_observable # using_proxy_delifting or using_identity_observable
+  future_state_prediction: 2 # In our use-case, single step future state prediction is sufficient to create a vector field. Otherwise note that the Koopman propagation depends on the sampling interval of your data 
+  num_cols: 121
+  num_rows: 121
+  save_vector_field: false
+# Training Parameters 
+  
+training_args:
+  training_via_trajectories: false
+  loss_type: custom_loss
+  append_inputs: true
+  batch_size: 16
+  batch_size_min: 16
+  epochs_n: 225
+  lambda1: 0.1
+  lambda2: 0.1
+  lr: '5e-4' # Empirically, the lower the data_args['resolution_training'] (lower flow magnitude), the lower lr needed
+  lr_step_size: 75
+  lr_gamma: 0.75
+  num_rff: 1024
+  operator_rank: 32
+  training_on_gpu: false
+  weight_decay: '1e-5'
+
+  # Loss weights 
+  loss_weights:
+  divergence_weight: 0.01
+  koopman_weight: 1.0
+  convergence_weight: 0.01
+
+# Plotting parameters
+plotting_args:
+  plot_figure: true
+  x_label: X
+  y_label: Y
+
+

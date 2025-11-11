@@ -1,0 +1,7 @@
+matplotlib==3.10.7
+numpy==2.3.4
+pyLasaDataset==0.1.1
+PyYAML==6.0.3
+ruamel.base==1.0.0
+scipy==1.16.3
+torch==2.9.0
