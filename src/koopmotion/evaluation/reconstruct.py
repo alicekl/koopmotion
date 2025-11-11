@@ -6,8 +6,8 @@ Reconstructs the learnt vector field
 import numpy as np
 import torch 
 
-from rff import LearnedFF 
-from koopman_model import KoopmanModel
+from koopmotion.models.rff import LearnedFF 
+from koopmotion.models.koopman_model import KoopmanModel
 
 import matplotlib.pyplot as plt 
 

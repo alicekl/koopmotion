@@ -1,10 +1,10 @@
-from plotter_new import Plotter
-from reconstruct import Reconstructor
+from koopmotion.evaluation.plotter import Plotter
+from koopmotion.evaluation.reconstruct import Reconstructor
 import argparse
 import yaml as yaml 
-from utils import int_constructor, get_training_time
+from koopmotion.utils.utils import int_constructor
 
-from checking_trajectories import run_checking_trajectories
+from koopmotion.evaluation.checking_trajectories import run_checking_trajectories
 import os 
 
 import numpy as np 
@@ -60,8 +60,8 @@ def save_vector_field(vector_field, data_args):
 if __name__ == '__main__':
     yaml.add_constructor('tag:yaml.org,2002:int', int_constructor, Loader=yaml.SafeLoader)   
     parser = argparse.ArgumentParser(description="Reconstructs vector field from model weights")
-    parser.add_argument("config_path", type=str, help="Path with the config file. e.g., /home/user/Github/koop-motion/configuration_files/lasa_angle")
-    parser.add_argument("trained_weights_path", type=str, help="Path with the trained weights. e.g., /home/user/Github/koop-motion/trained_weights/lasa_angle/20250101-000000_model_config_ep224")
+    parser.add_argument("config_path", type=str, help="Path with the config file. e.g., /home/user/Github/koopmotion/configuration_files/lasa_angle")
+    parser.add_argument("trained_weights_path", type=str, help="Path with the trained weights. e.g., /home/user/Github/koopmotion/trained_weights/lasa_angle/20250101-000000_model_config_ep224")
 
     args = parser.parse_args()
 

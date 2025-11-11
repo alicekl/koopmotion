@@ -95,8 +95,6 @@ if __name__ == '__main__':
             'spoon', 's', 'trapezoid', 'worm', 'w',
             'z', 'mm1', 'mm2', 'mm3', 'mm4']
     
-    _lasa_data = [lasa.DataSet.Angle, lasa.DataSet.BendedLine, lasa.DataSet.CShape]
-    _names_koopmotion = ['angle', 'bended_line', 'c']
 
     # Making a dictionary 
     lasa_dict = dict(zip(_names_koopmotion, _lasa_data))

@@ -8,7 +8,7 @@ import os
 import torch 
 import matplotlib.pyplot as plt 
 
-from data_getter import TrainingData  
+from koopmotion.datasets.data_getter import TrainingData  
 
 from time import strftime
 import sys

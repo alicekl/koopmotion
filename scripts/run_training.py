@@ -8,14 +8,14 @@ from time import strftime
 import argparse
 import torch 
 
-from train import ModelTrainer
-from utils import int_constructor, get_training_time
-from rff import LearnedFF 
-from koopman_model import KoopmanModel
-from loss import LossFunction
+from koopmotion.training.train import ModelTrainer
+from koopmotion.utils.utils import int_constructor, get_training_time
+from koopmotion.models.rff import LearnedFF 
+from koopmotion.models.koopman_model import KoopmanModel
+from koopmotion.training.loss import LossFunction
 
-from evaluation import reconstruct_learnt_vector_field, plot_learnt_vector_field, save_vector_field
-from checking_trajectories import run_checking_trajectories
+from run_evaluation import reconstruct_learnt_vector_field, plot_learnt_vector_field, save_vector_field
+from koopmotion.evaluation.checking_trajectories import run_checking_trajectories
 
 
 

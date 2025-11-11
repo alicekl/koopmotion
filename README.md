@@ -8,7 +8,7 @@ Code for **KoopMotion: Learning Almost Divergence Free Koopman Flow Fields for M
 
 Clone this repository and install its requirements 
 ```
-git clone https://github.com/alicekl/koop-motion.git
+git clone https://github.com/alicekl/koopmotion.git
 cd koop-motion
 python -m pip install -r requirements.txt 
 python -m pip install -e .
@@ -16,7 +16,7 @@ python -m pip install -e .
 ## Training a KoopMotion model
 To train KoopMotion models for example shapes within `example_configuration_folder`, run the following.
 ```
-python run_training.py example_configuration_folder
+python scripts/run_training.py example_configuration_folder
 ```
 The above code trains a KoopMotion model, saves weights for future reconstruction under `trained_weights`, and under `figures` saves the constructed KoopMotion vector field, and trajectories from the vector field.
 
@@ -27,13 +27,13 @@ We have only generated data for the example shapes in `example_configuration_fol
 ## Evaluating the model
 To obtain the vector field from a set of trained weights, you may perform evaluation only:
 ```
-python evaluation.py <path/to/configuration/file> <path/to/weights>
+python scripts/run_evaluation.py <path/to/configuration/file> <path/to/weights>
 ```
 
 ## Generating the sub-sampled (sparse) dataset
 We have included training data for 2 examples. To generate all of the data for the EPFL LASA handwriting dataset and the sub-sampled data we used for our paper, and save the data to the `data` folder, run the following:
 ```
-python generate_lasa_data.py
+python scripts/generate_lasa_data.py
 ``` 
 
 ## References
