@@ -1,7 +1,8 @@
-matplotlib==3.10.7
-numpy==2.3.4
+numpy>=1.26,<2.0
+scipy>=1.10,<1.15
+matplotlib>=3.7,<3.10
 pyLasaDataset==0.1.1
-PyYAML==6.0.3
-ruamel.base==1.0.0
-scipy==1.16.3
-torch==2.9.0
+PyYAML>=6.0,<6.1
+ruamel.yaml>=0.17,<0.18
+torch>=2.0,<2.6
+tensorboard>=2.10,<2.18

@@ -7,5 +7,14 @@ name = "koopmotion"
 version = "0.0.1"
 description = "Koopman-based learning from demonstrations"
 authors = [{name="Alice Kate Li"}]
-dependencies = []
-
+requires-python = ">=3.10,<3.12"
+dependencies = [
+  "numpy>=1.26,<2.0",
+  "scipy>=1.10,<1.15",
+  "matplotlib>=3.7,<3.10",
+  "torch>=2.0,<2.6",
+  "pyLasaDataset==0.1.1",
+  "PyYAML>=6.0,<6.1",
+  "ruamel.yaml>=0.17,<0.18",
+  "tensorboard>=2.10,<2.18"
+]
