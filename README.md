@@ -36,6 +36,7 @@ python scripts/run_evaluation.py configuration_files/lasa_angle/config.yaml trai
 ```
 
 For a detailed description of how to argument usage, run:
+```
 python scripts/run_evaluation.py -h
 ```
 
