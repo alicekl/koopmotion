@@ -30,6 +30,16 @@ To obtain the vector field from a set of trained weights, you may perform evalua
 python scripts/run_evaluation.py <path/to/configuration/file> <path/to/weights>
 ```
 
+For example:
+```
+python scripts/run_evaluation.py configuration_files/lasa_angle/config.yaml trained_weights/lasa_angle/20250101-000000_model_config_ep224.pt
+```
+
+For a detailed description of how to argument usage, run:
+python scripts/run_evaluation.py -h
+```
+
+
 ## Generating the sub-sampled (sparse) dataset
 We have included training data for 2 examples (lasa_angle, lasa_bended_line). To generate all of the data for the EPFL LASA handwriting dataset and the sub-sampled data we used for our paper, and save the data to the `data` folder, run the following:
 ```
