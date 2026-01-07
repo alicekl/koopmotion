@@ -1,6 +1,6 @@
 # KoopMotion
 
-Code for [**KoopMotion: Learning Almost Divergence Free Koopman Flow Fields for Motion Planning**](https://alicekl.github.io/koop-motion/).  KoopMotion is a learning from demonstration framework that enables learning smooth, stable motion policies (vector fields) from demonstration trajectories using Koopman operator theory. Evaluations are based on the [EPFL LASA handwriting dataset](https://github.com/justagist/pyLasaDataset).
+Code for KoopMotion: Learning Almost Divergence Free Koopman Flow Fields for Motion Planning (CoRL 2025). [**Link to Project Website**](https://alicekl.github.io/koop-motion/). [**Link to Paper**](https://arxiv.org/abs/2509.09074).  KoopMotion is a learning from demonstration framework that enables learning smooth, stable motion policies (vector fields) from demonstration trajectories using Koopman operator theory. Evaluations are based on the [EPFL LASA handwriting dataset](https://github.com/justagist/pyLasaDataset).
 
 ---
 
@@ -60,4 +60,12 @@ This repository contains an implementation of the work below. If you find this r
   organization={PMLR}
 }
 
+@inproceedings{salam2023online,
+  title={Online Estimation of the Koopman Operator Using Fourier Features},
+  author={Salam, Tahiya and Li, Alice Kate and Hsieh, M Ani},
+  booktitle={Learning for Dynamics and Control Conference},
+  pages={1271--1283},
+  year={2023},
+  organization={PMLR}
+}
 ```
